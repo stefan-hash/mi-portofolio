@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stefan Liviu Goran</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+            <i class="fas fa-user-astronaut me-2"></i> Stefan Goran
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link" href="#sobre-mi"><i class="fas fa-user me-1"></i> Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#bd-supermercado"><i class="fas fa-database me-1"></i> Base de Datos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="docs/cv-stefan-goran.pdf" download><i class="fas fa-file-download me-1"></i> CV</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#contacto"><i class="fas fa-envelope me-1"></i> Contacto</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="encabezado-principal bg-tetris text-white text-center position-relative">
+        <canvas id="tetrisCanvas"></canvas>
+        <div class="texto-superpuesto position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+            <h1 class="nombre">Stefan Liviu Goran</h1>
+            <h3 class="titulacion">Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</h3>
+        </div>
+    </header>
+
+
+    <section class="container my-5" id="sobre-mi">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+            <img src="img/foto-perfil.jpg" alt="Stefan Liviu Goran" class="img-fluid rounded-circle mb-3 perfil">
+            </div>
+            <div class="col-md-8">
+            <h2>Sobre mí</h2>
+            <p>
+                Soy técnico superior en desarrollo de aplicaciones multiplataforma, con pasión por crear soluciones eficientes y escalables.
+                Me encanta aprender nuevas tecnologías y colaborar en proyectos que generen impacto real.
+            </p>
+            <h4 class="mt-4">Habilidades técnicas</h4>
+            <ul class="lista-habilidades">
+                <li><i class="bi bi-code-slash"></i> Java, C#</li>
+                <li><i class="bi bi-window"></i> Desarrollo Web (HTML, CSS, JavaScript,Bootstrap,Blazor)</li>
+                <li><i class="bi bi-phone"></i> Android con Kotlin</li>
+                <li><i class="bi bi-database"></i> MySQL, SQLite, SQLServer, MariaDb, PostgreSQL, MongoDB</li>
+                <li><i class="bi bi-git"></i> Control de versiones con Git y GitHub</li>
+            </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center my-4">
+        <a href="docs/cv-stefan-goran.pdf" class="btn btn-acento" download>
+            Descargar CV
+        </a>
+    </section>
+
+    <section class="container my-5" id="galeria-proyectos">
+        <h2 class="text-center mb-4">Galería de Proyectos</h2>
+        <p class="text-center mb-4">Aquí puedes ver algunos de los proyectos personales que he desarrollado durante mi formación y prácticas.</p>
+        <div class="row">
+
+            <!-- Proyecto C# -->
+            <div class="col-md-4">
+            <div class="card bg-card text-white text-center p-4 mb-4">
+                <i class="fas fa-code fa-3x mb-3" style="color:#64ffda;"></i>
+                <h5>Ejercicios en C#</h5>
+                <p>Consola y lógica con estructuras condicionales y ciclos como parte del curso.</p>
+                <span class="badge bg-acento">#CSharp</span>
+                <a href="https://github.com/stefan-hash/curso-csharp" class="btn btn-outline-light mt-3" target="_blank">
+                <i class="fab fa-github me-2"></i> Ver en GitHub
+                </a>
+            </div>
+            </div>
+
+            <!-- Proyecto HTML/CSS -->
+            <div class="col-md-4">
+            <div class="card bg-card text-white text-center p-4 mb-4">
+                <i class="fab fa-html5 fa-3x mb-2" style="color:#e34c26;"></i>
+                <i class="fab fa-css3-alt fa-3x mb-2" style="color:#264de4;"></i>
+                <h5>Landing Page</h5>
+                <p>Diseño web moderno usando HTML, CSS y Bootstrap.</p>
+                <span class="badge bg-acento">#HTML</span>
+                <span class="badge bg-acento">#CSS</span>
+                <a href="https://github.com/stefan-hash/html-css" class="btn btn-outline-light mt-3" target="_blank">
+                <i class="fab fa-github me-2"></i> Ver en GitHub
+                </a>
+            </div>
+            </div>
+
+            <!-- Proyecto JavaScript -->
+            <div class="col-md-4">
+            <div class="card bg-card text-white text-center p-4 mb-4">
+                <i class="fab fa-js-square fa-3x mb-3" style="color:#f7df1e;"></i>
+                <h5>Manipulación del DOM</h5>
+                <p>Interacción con el DOM, eventos dinámicos y lógica en JavaScript.</p>
+                <span class="badge bg-acento">#JavaScript</span>
+                <a href="https://github.com/stefan-hash/proyectos-js-dom" class="btn btn-outline-light mt-3" target="_blank">
+                <i class="fab fa-github me-2"></i> Ver en GitHub
+                </a>
+            </div>
+            </div>
+
+            <!-- Proyecto Blazor -->
+            <div class="col-md-4">
+            <div class="card bg-card text-white text-center p-4 mb-4">
+                <i class="fas fa-laptop-code fa-3x mb-3" style="color:#64ffda;"></i>
+                <h5>Aplicación con Blazor</h5>
+                <p>Blazor WebAssembly y C# como backend. Comunicación entre componentes.</p>
+                <span class="badge bg-acento">#Blazor</span>
+                <span class="badge bg-acento">#CSharp</span>
+                <a href="https://github.com/stefan-hash/curso-blazor" class="btn btn-outline-light mt-3" target="_blank">
+                <i class="fab fa-github me-2"></i> Ver en GitHub
+                </a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5" id="bd-supermercado">
+        <div class="card bg-card text-white p-4">
+            <h3 class="mb-3">🗂️ Base de Datos — Gestión de Supermercado</h3>
+            <p>
+            Proyecto desarrollado durante mis prácticas empresariales. Simula el sistema completo de gestión de productos, eventos, proveedores, marcas y pescadería en un entorno comercial real. Incluye más de 12 tablas relacionales, técnicas de pesca, subastas y categorización avanzada.
+            </p>
+            <ul>
+            <li>Modelo relacional optimizado con claves foráneas</li>
+            <li>Exportado desde MySQL en formato JSON</li>
+            <li>Preparado para backend con integración a sistemas externos</li>
+            </ul>
+            <a href="docs/supermercado.json" class="btn btn-acento" download>📥 Descargar Base de Datos</a>
+            <a href="https://github.com/stefan-hash/BBDD-Supermercado" target="_blank" class="btn btn-outline-light ms-2">🌐 Ver repositorio en GitHub</a>
+        </div>
+    </section>
+
+    <section class="container my-5" id="contacto">
+        <h2 class="text-center mb-4">Contacto</h2>
+        <form action="https://formspree.io/f/myzpendl" method="POST" class="bg-card text-white p-4 rounded">
+            <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required />
+            </div>
+            <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" name="email" required />
+            </div>
+            <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-acento">
+            <i class="fas fa-paper-plane me-2"></i> Enviar mensaje
+            </button>
+        </form>
+    </section>
+
+    <footer class="bg-footer text-white text-center py-3">
+        <p>© 2025 Stefan Liviu Goran. Todos los derechos reservados.</p>
+        <p>Contacto: <a href="mailto:stefangoran61@gmail.com" class="text-acento">stefangoran61@gmail.com</a></p>
+        <p>Redes sociales: 
+        <a href="https://www.linkedin.com/in/stefan-liviu-goran-376a22199" class="text-acento">LinkedIn</a>
+        </p>
+    </footer>
+
+  <script src="js/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>>

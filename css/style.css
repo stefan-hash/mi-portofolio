@@ -1,0 +1,158 @@
+body {
+  background-color: #0a192f;
+  color: #ccd6f6;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.bg-animado {
+  background: linear-gradient(-45deg, #0a192f, #112240, #0a192f, #112240);
+  background-size: 400% 400%;
+  animation: fondoAnimado 12s ease infinite;
+}
+
+@keyframes fondoAnimado {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#maquina {
+  font-size: 2.5rem;
+  font-weight: bold;
+  transition: color 0.5s, transform 0.5s;
+}
+
+#maquina:hover {
+  color: #64ffda;
+  transform: scale(1.05);
+}
+
+.bg-card {
+  background-color: #112240;
+  border: none;
+}
+
+.btn-acento {
+  background-color: #64ffda;
+  color: #0a192f;
+  border: none;
+}
+
+.btn-acento:hover {
+  background-color: #52e0c4;
+  transform: scale(1.05);
+}
+
+.bg-footer {
+  background-color: #112240;
+}
+
+.text-acento {
+  color: #64ffda;
+}
+
+.btn-acento {
+  background-color: #64ffda;
+  color: #0a192f;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn-acento:hover {
+  background-color: #52e0c4;
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+.perfil {
+  max-width: 200px;
+  border: 4px solid #64ffda;
+}
+
+.lista-habilidades {
+  list-style: none;
+  padding-left: 0;
+}
+
+.lista-habilidades li {
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.lista-habilidades i {
+  color: #64ffda;
+  margin-right: 0.5rem;
+}
+
+.encabezado-principal {
+  background: linear-gradient(135deg, #0a192f, #112240);
+  padding: 4rem 2rem;
+  border-bottom: 2px solid #64ffda;
+}
+
+.nombre {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #64ffda;
+}
+
+.titulacion {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #ccd6f6;
+}
+
+#bd-supermercado {
+  border-top: 2px solid #64ffda;
+}
+
+#bd-supermercado h3 {
+  font-size: 1.8rem;
+  color: #64ffda;
+}
+
+#bd-supermercado ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#bd-supermercado ul li::before {
+  content: "✔️ ";
+  margin-right: 0.5rem;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #64ffda !important;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #ccd6f6 !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #64ffda !important;
+}
+
+#tetrisCanvas {
+  width: 100%;
+  height: 250px;
+  display: block;
+  background-color: #0a192f;
+}
+
+.texto-superpuesto h1,
+.texto-superpuesto h3 {
+  z-index: 10;
+}
+
+.encabezado-principal {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
